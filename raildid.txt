@@ -1,0 +1,7 @@
+ 1016  rails new helloWorld  
+ 1020  cd helloWorld
+ 1021  rails generate controller hello  
+ 1023  rails server
+ 1025  rails generate sidekiq:job hard\n
+ 1026  rails generate sidekiq:job rock/hard
+ 1029  bundle exec sidekiq\n
