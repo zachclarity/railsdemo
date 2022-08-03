@@ -1,7 +1,21 @@
- 1016  rails new helloWorld  
- 1020  cd helloWorld
- 1021  rails generate controller hello  
- 1023  rails server
- 1025  rails generate sidekiq:job hard\n
- 1026  rails generate sidekiq:job rock/hard
- 1029  bundle exec sidekiq\n
+
+
+rails new helloWorld
+
+cd helloWorld
+
+rails generate controller hello
+
+rails server
+
+rails generate sidekiq:job hard\n
+
+rails generate sidekiq:job rock/hard
+
+bundle exec sidekiq
+
+bundle exec sidekiq -r ./por.rb
+
+irb -r ./por.rb
+2.7.6 :001 > PlainOldRuby.perform_async "like a dog", 3
+ => "012f2d2b454c6b0e412d192b"
